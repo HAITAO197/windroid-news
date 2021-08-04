@@ -1,0 +1,12 @@
+html,
+body {
+  margin: 0;
+  font-family: Microsoft Yahei, PingFang SC, HanHei SC, Arial;
+  min-width: 1200px;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
