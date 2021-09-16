@@ -29,12 +29,6 @@ export default {
     }
     // methods末尾
   },
-  created() {
-    // window.addEventListener('mousemove', function eyesmove(e) {
-    //   var event = e || this.window.event
-    //   console.log(event.clientX + ' ' + event.clientY)
-    // })
-  },
   mounted() {
     window.addEventListener('mousemove', function eyesmove(e) {
       var event = e || this.window.event
@@ -42,7 +36,6 @@ export default {
       const pageHeight = window.screen.height - 60
       const eyeX = Math.round(((event.clientX - pageWidth) / pageWidth) * 10)
       const eyeY = Math.round(((event.clientY - pageHeight) / pageHeight) * 10)
-      //   console.log(eyeX + ' ' + eyeY)
       this.document.getElementById('eyes').childNodes.forEach(ele => {
         ele.style.transform = `translate(${eyeX}px, ${eyeY}px)`
       })
