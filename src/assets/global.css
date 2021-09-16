@@ -2,7 +2,11 @@ html,
 body {
   margin: 0;
   font-family: Microsoft Yahei, PingFang SC, HanHei SC, Arial;
-  min-width: 1200px;
+  min-width: 1000px;
+}
+html {
+  overflow-y: scroll;
+  overflow-x: none;
 }
 p {
   margin: 0;
