@@ -1,7 +1,5 @@
 <template>
   <div class="wrap">
-    <!-- <p>newsitem组件</p> -->
-    <!--  -->
     <div class="newsitem-wrap">
       <h2>{{ news.title }}</h2>
       <div class="info">
@@ -48,11 +46,7 @@ export default {
     async getNews() {
       try {
         const { data } = await content(this.$route.params.newsId)
-        // console.log(data.newsList)
         this.news = data.news[0]
-        // console.log(this.news)
-        // this.newsLIst[0].tags = this.newsLIst.tags[0].split(',')
-        // this.setTags()
       } catch (error) {
         console.log(error)
       }
