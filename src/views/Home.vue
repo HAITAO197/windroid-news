@@ -13,6 +13,22 @@
       <router-view></router-view>
     </div>
     <logo></logo>
+    <div class="footer-wrap">
+      <div class="footer">
+        <div>Copyright © 2019-2022 Windroid</div>
+        <a
+          class="beian"
+          target="_blank"
+          href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12011202000531"
+        >
+          <img src="@/assets/beian.png" />
+          <p>
+            津公网安备 12011202000531号
+          </p>
+        </a>
+        <a href="https://beian.miit.gov.cn" target="_blank">津ICP备2021006035号</a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -49,6 +65,7 @@ export default {
   }
 }
 .home-container {
+  position: relative;
   background-color: #e9e9e9;
   padding: 90px 0 50px 0;
   min-height: 100vh;
@@ -62,6 +79,30 @@ export default {
       transform: translate(-1px, -1px);
       box-shadow: 3px 3px 20px #aaa;
       transition: all 0.1s;
+    }
+  }
+}
+.footer-wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  // background-color: #fff;
+  .footer {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    color: #666;
+    a {
+      display: block;
+      color: #666;
+    }
+    a:hover {
+      color: #0079d6;
+    }
+    a.beian {
+      display: flex;
     }
   }
 }
